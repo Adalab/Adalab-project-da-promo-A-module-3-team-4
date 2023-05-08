@@ -9,6 +9,7 @@ SPRINT 1
 - Creamos repositorio en GitHub
 - Iniciamos el proyecto, analizando los datos con los que vamos a trabajar. Comenzamos con el EDA.
 
+- Continuamos con EDA y limpieza de algunas columnas: unificación variables categóricas, cambio del tipo de dato de la columna fecha (de string a datetime), recodificación de  0 y 1 en algunas variables numéricas, que finalmente resultan ser categóricas (columnas: "días_laborales" y "festivo")
 
 
 SPRINT 2
