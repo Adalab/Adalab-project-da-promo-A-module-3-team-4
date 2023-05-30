@@ -24,14 +24,17 @@ El repositorio consta de cuatro carpetas:
 
 **EDA**
 
-- Detalla en dos archivos el proceso de rcogida, análisis y limpieza de los datos:
+- Detalla en dos archivos el proceso de recogida, análisis y limpieza de los datos y otro archivo para la visualización de nuestro datos:
 
 1. Comenzamos por entender nuestros datos, haciendo una explicación de la naturaleza de nuestros estos y decidiendo cual va a ser nuestra variable respuesta, que es la variable que vamos a querer predecir.
-En este caso, elegimos hacer dos modelos predictivos para dos variables respuesta.
+En este caso, elegimos hacer dos modelos predictivos para dos variables respuesta por las diferencias de los patrones en los datos. Unos nos muestran el comportamiento para un tipo de cliente concreto (el más habitual) y el otro para un tipo de cliente diferente (de tipo más casual).
+
 
 2. Continuamos realizando un EDA, analizando los datos, detectando datos nulos, outliers y limpiando algunas columnas: unificación variables categóricas, cambio del tipo de dato de la columna fecha (de string a datetime), recodificación de  0 y 1 en algunas variables numéricas, que finalmente resultan ser categóricas (columnas: "días_laborales" y "festivo").
-Contamos también con un archivo de visualización de nuestros datos para tener una idea de cómo están distribuidos nuestros datos y sus agrupaciones.
-Revisar si queremos contar con todas nuestras variable o tenemos algunas redundantes.
+
+En el archivo de visualización  encontraréis las gráficas de nuestros datos para tener una idea de cómo están distribuidos los mismos y sus agrupaciones.
+
+Revisamos si queremos contar con todas nuestras variable o tenemos algunas redundantes.
 
 
 
@@ -49,18 +52,18 @@ Revisar si queremos contar con todas nuestras variable o tenemos algunas redunda
 
 **preprocesamiento_pruebas**
 
-- En dicha carpeta tenemos visible tres archivos con las distintas pruebas que hemos realizado para mejorar las métricas de nuestros modelos.
+- En dicha carpeta tenemos visible tres archivos con las distintas pruebas que hemos realizado para poder mejorar las métricas de nuestros modelos.
 
 
 
 **modelos**
 
-- En la carpeta modelos os encontraréis dos archivos que correspondes a los modelos de prediccón para nuestras variables respuestas elegidas.
+- En la carpeta modelos os encontraréis dos archivos que corresponden a los modelos de prediccón para nuestras variables respuestas elegidas.
 
 En ellos realizamos el modelo de regresión lineal, para el cual tenemos que contar con el cumplimiento de las asunciones de normalidad, heterocedasticidad, independencia.
-En nuestro caso, dado que nuestros datos no cumplían las asunciones para poder realizar el modelo deregresión lineal, pasamos a utilizar dos técnicas de aprendizaje automático supervisado. Estos algoritmos van a tomar una serie de decisiones que finaliza con la predicción que estamos buscando, es decir la solución a nuestro problema. Los logaritmos utilizados son el Decision Tree  y el Random Forest.
+En nuestro caso, dado que nuestros datos no cumplían las asunciones para poder realizar el modelo de regresión lineal, pasamos a utilizar dos técnicas de aprendizaje automático supervisado. Estos algoritmos van a tomar una serie de decisiones que finaliza con la predicción que estamos buscando, es decir la solución a nuestro problema. Los logaritmos utilizados son el Decision Tree  y el Random Forest.
 
-Ajuustamos los modelos mencionados, con los que vamos a trabajar.
+Ajustamos los modelos mencionados, con los que vamos a trabajar.
 
 Comprobamos las métricas obtenidas en nuestros modelos.
 
